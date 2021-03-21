@@ -1,0 +1,22 @@
+{
+  "name": "redjubjub-js",
+  "collaborators": [
+    "Henry de Valence <hdevalence@hdevalence.ca>"
+  ],
+  "description": "A mostly-standalone implementation of the RedJubjub signature scheme and keys.",
+  "version": "1.0.0",
+  "license": "MIT OR Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZcashFoundation/redjubjub"
+  },
+  "files": [
+    "redjubjub_js_bg.wasm",
+    "redjubjub_js.js",
+    "redjubjub_js.d.ts",
+	"redjubjub_js_bg.js"
+  ],
+  "module": "redjubjub_js.js",
+  "types": "redjubjub_js.d.ts",
+  "sideEffects": false
+}

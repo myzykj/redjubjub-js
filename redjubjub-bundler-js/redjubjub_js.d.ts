@@ -21,24 +21,6 @@ export function generate_spend_auth_sig(ask_string: string, alpha_string: string
 */
 export function verify_spend_auth_sig(rk_string: string, message_hash_string: string, signature_string: string): boolean;
 /**
-* @param {string} sk_string
-* @returns {string}
-*/
-export function generate_pk_by_sk(sk_string: string): string;
-/**
-* @param {string} sk_string
-* @param {string} message_hash_string
-* @returns {string}
-*/
-export function generate_binding_sig(sk_string: string, message_hash_string: string): string;
-/**
-* @param {string} pk_string
-* @param {string} message_hash_string
-* @param {string} signature_string
-* @returns {boolean}
-*/
-export function verify_binding_sig(pk_string: string, message_hash_string: string, signature_string: string): boolean;
-/**
 * @returns {any}
 */
 export function generate_keys(): any;

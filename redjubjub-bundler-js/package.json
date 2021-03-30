@@ -13,8 +13,7 @@
   "files": [
     "redjubjub_js_bg.wasm",
     "redjubjub_js.js",
-    "redjubjub_js.d.ts",
-	"redjubjub_js_bg.js"
+    "redjubjub_js.d.ts"
   ],
   "module": "redjubjub_js.js",
   "types": "redjubjub_js.d.ts",

@@ -141,7 +141,7 @@ Generate keys and payment address by `sk`, and `d`.
 
 
 ## Signature
-We also provide methods to sign and verify signature for spend authority signature and binding signature.
+We also provide methods to sign and verify signature for spend authority signature.
 
 ### spend authority signature
 
@@ -184,42 +184,57 @@ function verify_spend_auth_sig(rk, message_hash, signature)
 true
 ```
 
-### binding signature
+[comment]: <> (### binding signature)
 
-#### generate_pk_by_sk
+[comment]: <> (#### generate_pk_by_sk)
 
-Generate public key `pk` from private key `sk`.
+[comment]: <> (Generate public key `pk` from private key `sk`.)
 
-```JavaScript
-function  generate_pk_by_sk(sk)
-```
+[comment]: <> (```JavaScript)
 
-```console
-> m.generate_pk_by_sk('e3ebcba1531f6d9158d9c162660c5d7c04dadf77d85d7436a9c98b291ff69a09')
-'61a7134af4a6194592735dcda46c3119bdf547bc1e58bd60852cc88ba75f44a3'
-```
+[comment]: <> (function  generate_pk_by_sk&#40;sk&#41;)
 
-### generate_binding_sig
+[comment]: <> (```)
 
-Generate binding signature
+[comment]: <> (```console)
 
-```JavaScript
-function  generate_binding_sig(sk, message_hash)
-```
+[comment]: <> (> m.generate_pk_by_sk&#40;'e3ebcba1531f6d9158d9c162660c5d7c04dadf77d85d7436a9c98b291ff69a09'&#41;)
 
-```console
-> m.generate_binding_sig('e3ebcba1531f6d9158d9c162660c5d7c04dadf77d85d7436a9c98b291ff69a09','3b78fee6e956f915ffe082284c5f18640edca9c57a5f227e5f7d7eb65ad61502')
-'fea301d1f8c0ca3032cdfad36e64aaa27631419fdc84453d994beaa287408adf78e0478b8293eda3b3ba76f5c7efa302116fc577d18f354a5ff42ed25a655001'
-```
+[comment]: <> ('61a7134af4a6194592735dcda46c3119bdf547bc1e58bd60852cc88ba75f44a3')
 
-#### verify_binding_sig
+[comment]: <> (```)
 
-```JavaScript
-function  verify_binding_sig(pk, message_hash, signature)
-```
+[comment]: <> (### generate_binding_sig)
 
-```console
-> m.verify_binding_sig('61a7134af4a6194592735dcda46c3119bdf547bc1e58bd60852cc88ba75f44a3','3b78fee6e956f915ffe082284c5f18640edca9c57a5f227e5f7d7eb65ad61502','fea301d1f8c0ca3032cdfad36e64aaa27631419fdc84453d994beaa287408adf78e0478b8293eda3b3ba76f5c7efa302116fc577d18f354a5ff42ed25a655001')
-true
-```
+[comment]: <> (Generate binding signature)
+
+[comment]: <> (```JavaScript)
+
+[comment]: <> (function  generate_binding_sig&#40;sk, message_hash&#41;)
+
+[comment]: <> (```)
+
+[comment]: <> (```console)
+
+[comment]: <> (> m.generate_binding_sig&#40;'e3ebcba1531f6d9158d9c162660c5d7c04dadf77d85d7436a9c98b291ff69a09','3b78fee6e956f915ffe082284c5f18640edca9c57a5f227e5f7d7eb65ad61502'&#41;)
+
+[comment]: <> ('fea301d1f8c0ca3032cdfad36e64aaa27631419fdc84453d994beaa287408adf78e0478b8293eda3b3ba76f5c7efa302116fc577d18f354a5ff42ed25a655001')
+
+[comment]: <> (```)
+
+[comment]: <> (#### verify_binding_sig)
+
+[comment]: <> (```JavaScript)
+
+[comment]: <> (function  verify_binding_sig&#40;pk, message_hash, signature&#41;)
+
+[comment]: <> (```)
+
+[comment]: <> (```console)
+
+[comment]: <> (> m.verify_binding_sig&#40;'61a7134af4a6194592735dcda46c3119bdf547bc1e58bd60852cc88ba75f44a3','3b78fee6e956f915ffe082284c5f18640edca9c57a5f227e5f7d7eb65ad61502','fea301d1f8c0ca3032cdfad36e64aaa27631419fdc84453d994beaa287408adf78e0478b8293eda3b3ba76f5c7efa302116fc577d18f354a5ff42ed25a655001'&#41;)
+
+[comment]: <> (true)
+
+[comment]: <> (```)
 

@@ -22,24 +22,6 @@ declare namespace wasm_bindgen {
 	*/
 	export function verify_spend_auth_sig(rk_string: string, message_hash_string: string, signature_string: string): boolean;
 	/**
-	* @param {string} sk_string
-	* @returns {string}
-	*/
-	export function generate_pk_by_sk(sk_string: string): string;
-	/**
-	* @param {string} sk_string
-	* @param {string} message_hash_string
-	* @returns {string}
-	*/
-	export function generate_binding_sig(sk_string: string, message_hash_string: string): string;
-	/**
-	* @param {string} pk_string
-	* @param {string} message_hash_string
-	* @param {string} signature_string
-	* @returns {boolean}
-	*/
-	export function verify_binding_sig(pk_string: string, message_hash_string: string, signature_string: string): boolean;
-	/**
 	* @returns {any}
 	*/
 	export function generate_keys(): any;
@@ -64,9 +46,6 @@ declare interface InitOutput {
   readonly generate_rk_by_ask: (a: number, b: number, c: number, d: number, e: number) => void;
   readonly generate_spend_auth_sig: (a: number, b: number, c: number, d: number, e: number, f: number, g: number) => void;
   readonly verify_spend_auth_sig: (a: number, b: number, c: number, d: number, e: number, f: number) => number;
-  readonly generate_pk_by_sk: (a: number, b: number, c: number) => void;
-  readonly generate_binding_sig: (a: number, b: number, c: number, d: number, e: number) => void;
-  readonly verify_binding_sig: (a: number, b: number, c: number, d: number, e: number, f: number) => number;
   readonly generate_keys: () => number;
   readonly generate_keys_by_sk: (a: number, b: number) => number;
   readonly generate_keys_by_sk_d: (a: number, b: number, c: number, d: number) => number;

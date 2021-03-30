@@ -4,7 +4,7 @@
     "Henry de Valence <hdevalence@hdevalence.ca>"
   ],
   "description": "A mostly-standalone implementation of the RedJubjub signature scheme and keys.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT OR Apache-2.0",
   "repository": {
     "type": "git",
